@@ -14,5 +14,6 @@ int main(){
         printf("\n%s", ligne);
     }
 
+    caca
     return 0;
 }
