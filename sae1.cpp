@@ -2,15 +2,16 @@
 #include <fstream>
 #include <stdio.h>
 #include <string.h>
-#include <string>
 
 using namespace std;
 
-char* AjoutSuppr;
+
 
 int main(){
+    char AjoutSuppr;
     FILE *fichier = fopen("BD_INFOOKEA.csv", "r");
     char *ligne;
+
     if(fichier==NULL){
         exit(1);
     }
@@ -21,16 +22,13 @@ int main(){
     }
 
     do{
-        cout<<"Voulez-vous ajouter ou supprimer un client ? [A/S]"<<endl;
-        cout<<&AjoutSuppr;
-        cin>> *AjoutSuppr;
-        cout<<&AjoutSuppr;
-    }while((strcmp(AjoutSuppr, "S") == 0) || (strcmp(AjoutSuppr, "s") == 0) || (strcmp(AjoutSuppr, "A") == 0) || (strcmp(AjoutSuppr, "a") == 0));
-    //while((AjoutSuppr != 'S') || (AjoutSuppr != 's') ||(AjoutSuppr != 'A') ||(AjoutSuppr != 'a'));
-    /*cout<<"Voulez-vous ajouter ou supprimer un client ? [A/S]"<<endl;
-    cin>>AjoutSuppr;
-    cout<<AjoutSuppr;*/
+        cout<<"Voulez-vous ajouter ou supprimer un client ? [A/S]"<<"\t";
+        cin>>AjoutSuppr;
+    }while((AjoutSuppr != 'S') && (AjoutSuppr != 's') && (AjoutSuppr != 'A') && (AjoutSuppr != 'a'));
 
+    if((AjoutSuppr=='A' || AjoutSuppr=='a'){
+        fichier.fprint("oui");
+    }
 
     return 0;
 }

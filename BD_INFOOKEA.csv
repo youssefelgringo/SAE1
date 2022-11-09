@@ -1,21 +1,21 @@
-Prénom,Nom,Pays,Code_dep,j_au_club,age,nbr_pers_famille
-Jacques,Durant,France,80,15,43,1
-Bastien,Deshayes,Chili,0,45,18,2
-Youcef,Ochiba,Angola,0,34,17,6
-Sefkan,Acar,Pologne,0,15,46,1
-Youssef,Aboubi,Nouvelle-Zélande,0,1,18,4
-Jules,Souche,Centre afrique,0,0,7,2
-Quentin,Mastu,Togo,0,56,3,5
-Marc,Evans,Zimbabwe,0,47,5,3
-Didier ,Drogba,Kazaksthan,0,12,24,5
-Karim,Benzema,France,93,30,67,7
-Jonathan,Clauss,Argentine,0,27,21,7
-Erling,Haaland,France,60,16,64,6
-Allan,Saint-Maximin,Sri Lanka,0,12,3,2
-Mohamed,Henni,France,13,43,75,5
-Peter,Ronald,Haiti,0,6,46,4
-Jean,Polski,Philipines,0,24,15,2
-Samba,Bakari,Congo,0,18,1,5
-Simon,Brice,Sénégal,0,34,98,9
-Jack,Odegaard,Ukraine,0,25,12,7
-Paul,Chaine,France,75,365,75,8
+ID,Prénom,Nom,Pays,Code_dep,j_au_club,age,nbr_pers_famille
+1,Jacques,Durant,France,80,15,43,1
+2,Bastien,Deshayes,Chili,0,45,18,2
+3,Youcef,Ochiba,Angola,0,34,17,6
+4,Sefkan,Acar,Pologne,0,15,46,1
+5,Youssef,Aboubi,Nouvelle-Z�lande,0,1,18,4
+6,Jules,Souche,Centre afrique,0,0,7,2
+7,Quentin,Mastu,Togo,0,56,3,5
+8,Marc,Evans,Zimbabwe,0,47,5,3
+9,Didier ,Drogba,Kazaksthan,0,12,24,5
+10,Karim,Benzema,France,93,30,67,7
+11,Jonathan,Clauss,Argentine,0,27,21,7
+12,Erling,Haaland,France,60,16,64,6
+13,Allan,Saint-Maximin,Sri Lanka,0,12,3,2
+14,Mohamed,Henni,France,13,43,75,5
+15,Peter,Ronald,Haiti,0,6,46,4
+16,Jean,Polski,Philipines,0,24,15,2
+17,Samba,Bakari,Congo,0,18,1,5
+18,Simon,Brice,S�n�gal,0,34,98,9
+19,Jack,Odegaard,Ukraine,0,25,12,7
+20,Paul,Chaine,France,75,365,75,8
