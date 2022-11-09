@@ -3,7 +3,7 @@ ID,Prénom,Nom,Pays,Code_dep,j_au_club,age,nbr_pers_famille
 2,Bastien,Deshayes,Chili,0,45,18,2
 3,Youcef,Ochiba,Angola,0,34,17,6
 4,Sefkan,Acar,Pologne,0,15,46,1
-5,Youssef,Aboubi,Nouvelle-Z�lande,0,1,18,4
+5,Youssef,Aboubi,Nouvelle-Zelande,0,1,18,4
 6,Jules,Souche,Centre afrique,0,0,7,2
 7,Quentin,Mastu,Togo,0,56,3,5
 8,Marc,Evans,Zimbabwe,0,47,5,3
@@ -16,6 +16,6 @@ ID,Prénom,Nom,Pays,Code_dep,j_au_club,age,nbr_pers_famille
 15,Peter,Ronald,Haiti,0,6,46,4
 16,Jean,Polski,Philipines,0,24,15,2
 17,Samba,Bakari,Congo,0,18,1,5
-18,Simon,Brice,S�n�gal,0,34,98,9
+18,Simon,Brice,Senegal,0,34,98,9
 19,Jack,Odegaard,Ukraine,0,25,12,7
 20,Paul,Chaine,France,75,365,75,8
