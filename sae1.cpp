@@ -1,96 +1,56 @@
 #include <iostream>
 #include <fstream>
 #include <stdio.h>
-#include <string.h>
-#include <cstring>
 #include <string>
-#include <bits/stdc++.h>
 
 using namespace std;
 
-const char* conversionPrenomChar(string Prenom){
-    //const char* PrenomChar=Prenom.c_str();
-    char PrenomChar[Prenom.length()+1];
-    strcpy(PrenomChar, Prenom.c_str());
-
-    return PrenomChar;
-}
-
-const char* conversionNomChar(string Nom){
-    //const char* NomChar=Nom.c_str();
-    char NomChar[Nom.length()+1];
-    strcpy(NomChar, Nom.c_str());
-
-    return NomChar;
-}
-
-const char* conversionPaysChar(string Pays){
-    //const char* PaysChar=Pays.c_str();
-    char PaysChar[Pays.length()+1];
-    strcpy(PaysChar, Pays.c_str());
-
-    return PaysChar;
-}
-
-const char* conversionNomChar(int Code_dep){
-    char Nomchar;
-    sprintf(NomChar, "%d", Code_dep);
-
-    return NomChar;
-}
+typedef struct client{
+    string prenom;
+    string nom;
+    string age;
+    string pays;
+    string Code_dep;
+    string j_au_club;
+    string nb_personne_F;
+};
 
 int main(){
     char AjoutSuppr;
-    string Nom, Prenom, Pays;
-    int Code_dep, j_au_club, age, nb_personnes_famille, ID;
-    string infookea="BD_INFOOKEA.csv";
-    FILE *fichier = fopen("BD_INFOOKEA.csv", "r");
+    client personne;
+    FILE *fichier = fopen("BD_INFOOKEA.csv", "r"); //ouvre le fichier en read-only
     char *ligne;
 
     if(fichier==NULL){
         exit(1);
     }
 
-    while(fgets(ligne, 255, fichier) != NULL) {
-        //printf("\n%s", ligne);
+    while(fgets(ligne, 255, fichier) != NULL) { //affiche le fichier dans la console
         cout<<ligne<<endl;
     }
 
-    do{
+    do{ //demande à l'utilisateur s'il veut ajouter ou supprimer un client
         cout<<"Voulez-vous ajouter ou supprimer un client ? [A/S]"<<"\t";
         cin>>AjoutSuppr;
-    }while((AjoutSuppr != 'S') && (AjoutSuppr != 's') && (AjoutSuppr != 'A') && (AjoutSuppr != 'a'));
+    }while((AjoutSuppr != 'S') && (AjoutSuppr != 's') && (AjoutSuppr != 'A') && (AjoutSuppr != 'a')); //il faut que le user saisisse soit S/s soit A/s
 
-    if((AjoutSuppr=='A' || AjoutSuppr=='a')){
+    if((AjoutSuppr=='A' || AjoutSuppr=='a')){ //Entre toutes les données à saisir dans le csv à propos du client
         cout<<"Quel est le prénom du client ?"<<endl;
-        cin>>Prenom;
+        cin>>personne.prenom;
         cout<<"Quel est le nom du client ?"<<endl;
-        cin>>Nom;
+        cin>>personne.nom;
         cout<<"De quel pays provient-il ?"<<endl;
-        cin>>Pays;
+        cin>>personne.pays;
         cout<<"Quel est son code de département ?"<<endl;
-        cin>>Code_dep;
+        cin>>personne.Code_dep;
         cout<<"Depuis combien de temps est-il au club ?"<<endl;
-        cin>>j_au_club;
+        cin>>personne.j_au_club;
         cout<<"Quel est son age ?"<<endl;
-        cin>>age;
+        cin>>personne.age;
         cout<<"Combien de personnes a-t-il dans sa famille ?"<<endl;
-        cin>>nb_personnes_famille;
+        cin>>personne.nb_personne_F;
 
-        //ID=
-
-        const char* PrenomCharMain=conversionPrenomChar(Prenom);
-        const char* NomCharMain=conversionNomChar(Nom);
-        const char* PaysCharMain=conversionPaysChar(Pays);
-        
-        //conversionStringChar(Nom, Prenom, Pays);
-
-        const char* client[8][300]={PrenomCharMain, NomCharMain, PaysCharMain, Code_dep, j_au_club, age, nb_personnes_famille};
-        cout<<client;
-        
-        //fprintf(fichier, )
-        
+        string eee = {/*ID,",",*/personne.prenom,",",personne.nom,",",personne.pays,",",personne.Code_dep,",",personne.j_au_club,",",personne.age,",",personne.nb_personne_F}
     }
-
     return 0;
 }
