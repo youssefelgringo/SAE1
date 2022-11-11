@@ -50,7 +50,8 @@ int main(){
         cout<<"Combien de personnes a-t-il dans sa famille ?"<<endl;
         cin>>personne.nb_personne_F;
 
-        string eee = {/*ID,",",*/personne.prenom,",",personne.nom,",",personne.pays,",",personne.Code_dep,",",personne.j_au_club,",",personne.age,",",personne.nb_personne_F}
+        string client = {/*ID,",",*/personne.prenom,",",personne.nom,",",personne.pays,",",personne.Code_dep,",",personne.j_au_club,",",personne.age,",",personne.nb_personne_F};
+        cout<<client;
     }
     return 0;
 }
